@@ -229,7 +229,6 @@ const Home = () => {
           cursor: "pointer",
         }}
         href="/collect-tokens"
-        target="_blank"
         rel="noopener noreferrer"
       >
         Reset
