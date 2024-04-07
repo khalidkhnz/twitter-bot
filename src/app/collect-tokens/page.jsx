@@ -6,6 +6,7 @@ import {
 } from "@/action/CollectAuths.action";
 import React, { useState } from "react";
 import { toast } from "sonner";
+import OpenApp from "react-open-app";
 
 const Home = () => {
   const [tweet, setTweet] = useState("");
@@ -147,6 +148,27 @@ const Home = () => {
           >
             Go And Authorize
           </a>
+          <p>OR</p>
+          <OpenApp
+            style={{
+              borderRadius: "10px",
+              display: "flex",
+              alignItems: "center",
+              justifyContent: "center",
+              textDecoration: "none",
+              width: "200px",
+              minHeight: "50px",
+              height: "50px",
+              backgroundColor: "#fff",
+              color: "#000",
+              margin: "10px",
+              textTransform: "capitalize",
+              cursor: "pointer",
+            }}
+            href={`${authorizeURL}`}
+          >
+            Go And Authorize In APP
+          </OpenApp>
         </div>
       )}
 
